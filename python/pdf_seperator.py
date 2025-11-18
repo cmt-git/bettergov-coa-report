@@ -139,8 +139,6 @@ def loopPages(pdfPath: str, startPage: int, endPage: int, max_workers: int, extr
         for future in as_completed(futures):
             txt_files.append(future.result())
 
-    txt_files.sort()
-
     # *
     # *
 
@@ -160,6 +158,6 @@ def loopPages(pdfPath: str, startPage: int, endPage: int, max_workers: int, extr
 # *
 # *
 
-# Usage
 # 15, 247
-loopPages("./inputs/CY-2024.pdf", startPage=248, endPage=248, max_workers=10, extractorType="NPAE")
+loopPages("./inputs/CY-2024.pdf", startPage=15, endPage=247, max_workers=10, extractorType="NPAE")
+#loopPages("./inputs/CY-2024.pdf", startPage=15, endPage=247, max_workers=10, extractorType="NPAE")
