@@ -1,0 +1,47 @@
+BIOCO, RODERICO RAYO||Administrator/Council Vice Chairman||796,460.89
+LACSON, LARRY DEL||ROSARIO Acting Administrator/Council Member||3,270,249.80
+SANTOS, PIOLITO COLENDRINO||OIC Administrator/Assistant Administrator||546,276.03
+ANDRADA, MARIO GO||OIC Deputy Administrator||1,580,565.85
+PAGAYUNAN, LEMUEL RUTAQUIO||Assistant Administrator||3,051,559.50
+DE VERA, VERALEW DE||GUZMAN Acting Assistant Administrator||1,004,669.41
+HERMANO, JOHN ROBERT ROSALES||Acting Assistant Administrator||224,741.72
+MORALES, CHRISTOPHER VICUÑA||Alternate Council Chairman||0.00
+NAVARRO, ROGER VILLACORTA||Alternate Council Chairman||0.00
+BALISACAN, ARSENIO MOLINA||Council Member||0.00
+BERSAMIN, LUCAS PURUGGANAN||Council Member||0.00
+GATCHALIAN, REXLON TING||Council Member||0.00
+GO, FREDERICK DY||Council Member||0.00
+NOGRALES, AMANDA MARIE FUENTES||Council Member||0.00
+ORTIZ, MA. LYNETTE VILLALUZ||Council Member||0.00
+PASCUAL, ALFREDO ESPINOSA||Council Member||0.00
+RECTO, RALPH GONZALEZ||Council Member||0.00
+ROQUE, MARIA CRISTINA ALDEGUER||Council Member||0.00
+ALMANZA, SHARON PORNILLOSA||Alternate Council Member||0.00
+BUTOCAN, SITTIE HANNISHA MAYO||Alternate Council Member||0.00
+CAJIPE, DIANA ROSE SANTIAGO||Alternate Council Member||0.00
+CORTEZ, DAREN DUNGKA||Alternate Council Member||0.00
+IGNACIO, GABRIEL LORENZO LOPEZ||Alternate Council Member||0.00
+LA ROSA, JOLLY DUMAOAL||Alternate Council Member||0.00
+LEDESMA, PAUL DELES||Alternate Council Member||0.00
+NATURAL, NIEVA TANJUAN||Alternate Council Member||0.00
+PACHECO, MARY JEAN TIONGSON||Alternate Council Member||0.00
+PANGILINAN, ELCID CUEVAS||Alternate Council Member||0.00
+PUYAT, BERNADETTE FATIMA ROMULO||Alternate Council Member||0.00
+TESTON, KRISTINE JOY DIAZ||Alternate Council Member||0.00
+VELASQUEZ, DOMINI SAN||DIEGO Alternate Council Member||0.00
+TOBIAS, RENATO DE||LEON President/BOD Vice Chairperson||3,895,782.46
+RAMOS, LIVIA ALICIA RAMIDO||Executive Vice President||3,816,557.84
+FAVILA, MA. LUISA MERTO||Vice President||2,953,922.40
+LAPASARAN, SIEGFRID ERIC GARCIA||Vice President||2,638,764.42
+CORTEZ, CAROLINA CERVANIA||Vice President||2,463,387.55
+ALPAJARO, MA. VICTORIA LISTANA||Vice President||1,712,955.77
+CABALLERO, PAZ DIVINA ALCANTARA||OIC-Vice President||854,970.30
+SARANGAYA, JOSEPHINE QUIMSON||OIC-Vice President||468,574.12
+CARIÑO, EMMANUEL LIGUID||OIC-Vice President||382,411.68
+YAP, HENRY LAO||BOD Alternate Chairperson||0.00
+FIGUEROA, GLENDA RUMOHR||BOD Alternate Member||0.00
+LARCIA, LEO ANGELO MEJOS||BOD Alternate Member||0.00
+PUYAT, BERNADETTE FATIMA ROMULO||BOD Alternate Member||0.00
+REAL, TANYA TEVES||BOD Alternate Member||0.00
+SANTOS, MARIANNE MONZON||BOD Alternate Member||0.00
+TAN, MARIA EDITA ZABALA||BOD Alternate Member||0.00

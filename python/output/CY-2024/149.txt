@@ -1,0 +1,39 @@
+SEDANO, RODOLFO TORRICES||Chief Administrative Officer||2,098,714.03
+BACULO, JUNIMARO PADUA||Acting Financial Management Officer II||1,654,643.47
+DIZON, ROCKY REYES||Acting Chief Allied Health Professional Service||947,607.19
+PORTAJE, MARIA KRISTINE GO||Chief Nurse||1,935,485.23
+DAVID, MATTHEW MALABO||Executive Director||0.00
+AQUINO, EMILIO BENITO||Member||0.00
+REGALADO, REYNALDO AVERILLA||Member||0.00
+PEREZ, ERNESTO VINLUAN||Director General||4,978,349.89
+ABOT, GENESES RIVERO||Deputy Director General - Legal||3,246,206.15
+DIVINAGRACIA, GERALD GENOVEZ||Deputy Director General - Operations||3,244,093.54
+ECHIVERRI, RICO JUDGE JANVIER MALABANAN||Deputy Director General - Administration and Finance ||
+MARBIDA, MARBIDA LOVENDINO||Director IV - Better Regulations Office||3,305,237.10
+FERNANDEZ, GRACE LARDIZABAL||Director IV - Compliance, Monitoring and Evaluation||
+TAPIA, LEONARDO ORTEGA||Director IV - Legal and Public Assistance Office||2,633,233.25
+ENAD, CONCEPCION ZENY FERROLINO||Director IV - Investigation, Enforcement and Litigation||
+QUILALA, RABINDRANATH PABLO||Director IV - Administration and Finance Office||1,613,896.82
+SALCEDO, LEA GRACE BANDIWAN||Director IV - Administration and Finance Office||895,128.29
+BRAWNER, ROMEO JR SATURNINO||Chief of Staff||0.00
+CORDURA, ARTHUR MIRASOL||Vice Chief of Staff||0.00
+GAERLAN, CHARLTON SEAN MARTINEZ||Deputy Chief of Staff||0.00
+LARIDA, JIMMY DECALIT||Deputy Chief of Staff||0.00
+MALINIT, AUGUSTINE SAGUN||Acting Deputy Chief of Staff||0.00
+DALAGUIT, JONNA DALIDA||Commander||705,581.00
+LACANILAO, ARMAND PARUNGAO||Acting Commander/Deputy Commander||1,899,480.00
+DE JESUS, MARVIN ANINAO||Chief of Staff||222,764.57
+CLAUDIO, LORMELYN ESTRADA||Director IV||2,375,403.00
+ANDRES, ARMIDA PULLO||OIC-Assistant Director||1,722,338.40
+TAGTAG, ANSON MIGUEL||Division Chief||1,614,059.17
+MARANAN, MERIDEN ESPIRITU||Division Chief||1,432,176.29
+LADISLA, JUVY PACAIGUE||OIC-Division Chief||1,368,506.18
+CORPUZ, NANCY REAÑO||OIC-Division Chief||1,364,522.31
+AVELINO, JOHN ERICK BERSOLA||OIC-Division Chief||313,943.74
+TUPAS, JHORACE ENGAY||OIC-Division Chief||298,918.51
+CUANAN, RYAN AGUSTIN||OIC-Division Chief||261,880.00
+SAMANIEGO, MARJORIE RAMOS||Governor||2,868,209.29
+DY, KATRINA THERESE LIM||Governor||2,859,358.97
+DICHOSA, MA. CORAZON HALILI||Executive Director||3,077,243.83
+FONDEVILLA, BOBBY GANAN||Executive Director||3,006,550.65
+CAGATAN, EVARISTE MANALO||Executive Director||2,943,124.52
