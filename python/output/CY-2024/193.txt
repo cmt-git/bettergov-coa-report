@@ -19,7 +19,7 @@ EBORA, REYNALDO VALENCIA||Executive Director||3,348,043.74
 BATALON, JUANITO TAN||Deputy Executive Director||2,731,416.01
 CARLOS, MELVIN BALAGTAS||Deputy Executive Director||2,727,156.59
 MONTOYA, JAIME CARLOS||Executive Director||3,376,575.34
-DE LEON, PAUL ERNEST|| NUQUE Division Chief||1,996,190.80
+DE LEON, PAUL ERNEST||NUQUE Division Chief||1,996,190.80
 GARCIA, ULLYANN CARTICIANO||Division Chief||1,957,678.37
 ATIENZA, MICHELLE VILLAMIN||Division Chief||1,892,060.09
 AMERICA, JOANA ANGOSTORA||Division Chief||1,854,943.10
@@ -36,4 +36,3 @@ RATERTA, RUBY -||Division Chief||1,961,784.55
 ESTILLORE, GRACE FELIPE||Division Chief||1,905,578.97
 BUENAVIDES, MARY GRACE GONZALES||Division Chief||1,904,217.45
 PILI, RUSSEL MATA||Division Chief||1,901,149.94
-LAZO, MORO VIRGILITO MANDAC||Senior Undersecretary/ Director General 3,080,411.00Philippine Council for Agriculture, Aquatic and Natural Resources Research and||Development

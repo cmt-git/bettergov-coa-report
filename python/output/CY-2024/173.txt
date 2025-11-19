@@ -16,8 +16,6 @@ TEODOSIO, MARY GRACE RIGUER||Deputy Executive Director III||2,400,484.88
 CABUSAS, CAMILO FRANCO SAGALA||Chief Administrative Officer||1,757,666.23
 ALBA, REINERIO ARCAYA||Chief Labor and Employment Officer||1,711,111.72
 TACADAO, MIRALUNA SEALQUIL||Chief Labor and Employment Officer||1,671,354.59
-MANGULABNAN, BERNARD PAUL MANUEL||Supervising Labor and Employment Officer/Acting||
-LUMACTUD, JOYCE ANNE SIMPELO||Supervising Labor and Employment Officer/OIC-Chief||
 REGALADO, REYNALDO AVERILLA||Commissioner||8,660,125.45
 SERRANO, RANDY GINGANE||Deputy Insurance Commissioner||6,118,652.74
 LOPEZ, JAYSON PANGILINAN||Deputy Insurance Commissioner||3,965,397.27
@@ -43,4 +41,3 @@ MENDOZA, RODA VALDEZ||Chief, Business Management Division||1,570,848.00
 RODRIGUEZ, VANESSA QUILENTE||Chief, Finance and Administrative Division||1,528,848.00
 MARTINEZ, SANDRA MORALES||Chief, Tourism Promotions Division||946,110.62
 PAGADOR, SARAH JANE PAHIMNAYAN||Chief, Cultural Properties Conservation Division||901,445.97
-YAP, JEFFREY PASCUAL||Chief, Urban Planning and Community Development||

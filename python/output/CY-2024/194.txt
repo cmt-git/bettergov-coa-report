@@ -1,5 +1,3 @@
-DICKSON, ISRAEL EPHRAIM TAVERNER||Assistant Secretary/ Deputy Director General for||
-GUMBAN, RENATO AMADOR||Assistant Secretary/ Deputy Director General for||
 CAGASAN, EVELYN BONETE||OIC-Executive Director||1,553,415.37
 VELICARIA-GUEVARRA, GENEVIEVE ESTABILLO||OIC-Executive Director||0.00
 RIVERA, ANNRAY VILLOTA||Deputy Executive Director||2,090,018.04
@@ -29,10 +27,7 @@ TORRES, JOSE JR. ADRIAS||Director General||2,636,124.28
 BUERANO JR., WILSON TEJADA||Deputy Director General for Finance||2,952,468.00
 MESINA, ELMER JUDE FRUTO||Deputy Director General for Knowledge Management||2,117,522.99
 GUTIERREZ, ADOLFO ARES PENALES||Deputy Director General for Regional Operations||2,930,230.18
-CAGA, ABNER MAKINANO||Deputy Director General for Unified Messaging in||
 MENIA, MA. THERESA SANTIAGO||Assistant Director General - Knowledge Management||687,684.00
-LORENZO, ALLAN VINCENT BOGALON||Assistant Director General for Legal Affairs and||
-CULLA, TADEO RAMOS||Assistant Director General for Organizational||
 CORTEZ, EMVER PACLIBAR||Regional Director, PIA NCR||1,631,217.14
 BACOLCOL, TERESITO CARESO||Director IV||3,429,965.93
 VILLEGAS, MA. MYLENE MARTINEZ||Director III||2,927,899.87

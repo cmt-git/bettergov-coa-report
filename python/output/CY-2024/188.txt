@@ -1,7 +1,4 @@
 LOPEZ, ALEXANDER SORIA||Spokesperson with the Rank of Undersecretary||1,144,458.83
-TABORA, ANTONIO JR. RUNEZ||Presidential Assistant for Cordillera Administrative||
-TILLAH, ALMARIM CENTI||Presidential Assistant on Muslim Affairs with the Rank||
-REMIGIO, ANA CARMELA VENTURA||Presidential Assistant for Northern Luzon with the Rank||
 ZOBEL, BIANCA CRISTINA CARDENAS||Assistant Executive Secretary||2,986,511.95
 ROM, NICELY ROLDAN||Assistant Executive Secretary||2,981,935.59
 TEVES, MICHELLE CRISABEL MANALO||Assistant Executive Secretary||2,870,594.39
@@ -25,8 +22,7 @@ LIM, ANTONIO PAOLO SERRANO||Assistant Secretary||686,409.94
 GARGANTIEL, KRISTJAN VICENTE TOMAS||Assistant Secretary||634,384.25
 ALBA, JASON JOAQUIN||Assistant Secretary||616,732.46
 FELIX, PETER ANTHONY JOSEPH FELARCA||Assistant Secretary||601,007.96
-GO, MARYL KARREN ANG||Director V with the Rank of Assistant  Secretary||2,438,628.82
-GALVEZ, CARLITO JR. GUANSING||Presidential  Adviser on Peace, Reconciliation and||
+GO, MARYL KARREN ANG||Director V with the Rank of Assistant Secretary||2,438,628.82
 PURISIMA, ISIDRO LA||MADRID Senior Undersecretary||3,155,786.00
 DICIANO, DAVID BIRUNG||Presidential Assistant I||3,155,786.00
 MAYOR, WILBEN MANIPOL||Presidential Assistant I||3,155,786.00

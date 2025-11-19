@@ -5,7 +5,6 @@ SARNE, LEONARDO ROMANO||Acting Chief - Public Affairs Division||1,237,467.63
 ELIGADO, MA. EILEEN VELASQUEZ||Acting Chief - Network Division||1,041,959.10
 CEPEDA, MARIETTA CUARESMA||Acting Chief - News Division||1,037,417.10
 ORTIGUERO, BENJAMIN REUEL JR. RICARDO||Acting Chief - Administrative Division||902,035.67
-REYES, LETICIA NAPADAO||Engineer V/ Head, BBS Special Concerns on PANP||
 TACLAN, MA. LILIBETH ESPEDILLON||OIC Planning Division||1,395,349.55
 DATO, NESTOR JR. BARENG||OIC, Finance and Administrative Division||1,299,549.60
 BARRIENTOS, ARLENE ANTONIO||OIC, Special Production Division||1,141,021.77
@@ -32,7 +31,7 @@ PEREZ, ZALDY PREÑA||Assistant Director||3,351,236.57
 ENCARNACION, ANGEL BALISI||OIC-Assistant Director||273,488.28
 ALBALADEJO, MA. ABEGAIL APOSTOL||Division Chief||2,366,939.21
 BUAZON, MILDRED MERCENE||Division Chief||2,250,070.55
-TUÑACAO, ELYMI AR-J|| SUBANG Division Chief||1,850,793.88
+TUÑACAO, ELYMI AR-J||SUBANG Division Chief||1,850,793.88
 DIAZ, AMOR GARCIA||Division Chief||1,603,736.34
 SOMGA, SONIA SEBASTIAN||Division Chief||1,512,066.88
 RAMISCAL, RAFAEL VALIENTE||Division Chief||1,192,927.05

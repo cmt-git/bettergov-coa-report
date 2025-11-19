@@ -3,8 +3,40 @@ import os
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import List, Tuple, Literal, Type, cast
+from datetime import datetime
+from dataclasses import dataclass
 
-TExtractorTypes = Literal["NPAE"]
+#region: detect_date_or_time
+def detect_date_or_time(s: str) -> str:
+    time_formats = ["%I:%M:%S%p", "%H:%M:%S", "%H:%M"]  # 12h and 24h formats
+    date_formats = ["%m/%d/%Y", "%Y-%m-%d", "%d-%m-%Y"]  # common date formats
+
+    for fmt in time_formats:
+        try:
+            datetime.strptime(s, fmt)
+            return True
+        except ValueError:
+            continue
+
+    for fmt in date_formats:
+        try:
+            datetime.strptime(s, fmt)
+            return True
+        except ValueError:
+            continue
+
+    return False
+
+# *
+# *
+
+#region: is_number
+def is_number(s: str) -> bool:
+    try:
+        float(s.replace(",", ""))
+        return True
+    except ValueError:
+        return False
 
 # *
 # *
@@ -13,20 +45,22 @@ TExtractorTypes = Literal["NPAE"]
 # *
 # *
 
-def namePositionAndAmountExtractor(_text: str) -> List[Tuple[str, str, str]]:
-    """
-    Extracts Name, Position, and Amount from a text block.
+@dataclass
+class ExtractorProps:
+  text: str
+  skipsBeforeNameExtraction: int
+  skipsBeforePositionExtraction: int
+  salaryOffsetIndex: int
+  jrAsMiddle: bool
 
-    Args:
-        _text (str): Raw text from PDF.
-
-    Returns:
-        List[Tuple[str, str, str]]: List of (Name, Position, Amount) tuples.
-    """
+#region: Extractor
+def Extractor(
+  data: ExtractorProps
+  ) -> List[Tuple[str, str, str]]:
     results: List[List[str]] = []
 
     # Split text into lines
-    lines = _text.splitlines()
+    lines = data.text.splitlines()
 
     # *
     # *
@@ -43,12 +77,34 @@ def namePositionAndAmountExtractor(_text: str) -> List[Tuple[str, str, str]]:
         # *
         # *
 
+        skip_threshold: int = 0
         for i, word in enumerate(line_split):
+
+          filtered_index = i + 1
+
+          if detect_date_or_time(word):
+            continue
+
+          if appendMode == "name" and filtered_index < skip_threshold + data.skipsBeforeNameExtraction:
+            continue
+
           if appendMode == "name":
-            if len(word) > 0:
-              name.append(word)
+
+            word_is_not_jr = word.lower() != "jr."
+
+            if len(word) > 0 and (word_is_not_jr or data.jrAsMiddle == False):
+              word = re.sub(r"\d", "", word)
+
+              if len(word) > 0:
+                name.append(word)
+              else:
+                continue
             else :
+              if not word_is_not_jr and data.jrAsMiddle:
+                 name.append(word)
+
               appendMode = "last_name"
+              skip_threshold = filtered_index
               continue
 
           if appendMode == "last_name":
@@ -56,14 +112,31 @@ def namePositionAndAmountExtractor(_text: str) -> List[Tuple[str, str, str]]:
             name.append(word)
             continue
 
-          if i != len(line_split) - 1 :
-            if appendMode == "position":
-              position.append(word)
-          else :
-            salary.append(word)
+          if appendMode == "position" and filtered_index < skip_threshold + data.skipsBeforePositionExtraction:
+            continue
+
+          if len(word) > 0:
+            if i != len(line_split) - (1 + data.salaryOffsetIndex) :
+              if appendMode == "position":
+                if is_number(word):
+                  continue
+
+                position.append(word)
+            else :
+              if (is_number(word)):
+                salary.append(word)
 
         # *
         # *
+
+        # print("\n\n\n")
+        # print("="*30)
+        # print(line_split)
+        # print("\n")
+        # print(name, position, salary)
+        # print("\n")
+        # print(len(name) > 0, len(position) > 0, len(salary) > 0)
+        # print("="*30)
 
         if len(name) > 0 and len(position) > 0 and len(salary) > 0:
           results.append([" ".join(i) for i in [name, position, salary]])
@@ -73,8 +146,12 @@ def namePositionAndAmountExtractor(_text: str) -> List[Tuple[str, str, str]]:
 
     return results
 
-
-def processPage(extractedText: str, pageIndex: int, baseDir: str, extractorType: TExtractorTypes) -> str:
+# region: processPage
+def processPage(
+  text: str,
+  pageIndex: int,
+  baseDir: str,
+  extractorData: ExtractorProps) -> str:
     """
     Saves extracted data to txt.
 
@@ -90,8 +167,11 @@ def processPage(extractedText: str, pageIndex: int, baseDir: str, extractorType:
     # *
     # *
 
-    if extractorType == "NPAE":
-      rows = namePositionAndAmountExtractor(extractedText)
+    extractorData.text = text
+    rows = Extractor(extractorData)
+
+    # *
+    # *
 
     txtPath = f"{baseDir}/{pageIndex}.txt"
     with open(txtPath, "w", newline="", encoding="utf-8") as f:
@@ -112,7 +192,15 @@ def processPage(extractedText: str, pageIndex: int, baseDir: str, extractorType:
 # *
 # *
 
-def loopPages(pdfPath: str, startPage: int, endPage: int, max_workers: int, extractorType: TExtractorTypes):
+#region: loopPages
+def loopPages(
+    pdfPath: str,
+    startPage: int,
+    endPage: int,
+    max_workers: int,
+    extractorData: ExtractorProps
+    ):
+
     reader = PdfReader(pdfPath)
     totalPages = len(reader.pages)
 
@@ -134,7 +222,7 @@ def loopPages(pdfPath: str, startPage: int, endPage: int, max_workers: int, extr
             page = reader.pages[pageNum]
             text = page.extract_text()  # extract text here
 
-            futures[executor.submit(processPage, text, pageNum + 1, baseDir, extractorType)] = pageNum
+            futures[executor.submit(processPage, text, pageNum + 1, baseDir, extractorData)] = pageNum
 
         for future in as_completed(futures):
             txt_files.append(future.result())
@@ -158,6 +246,56 @@ def loopPages(pdfPath: str, startPage: int, endPage: int, max_workers: int, extr
 # *
 # *
 
-# 15, 247
-loopPages("./inputs/CY-2024.pdf", startPage=15, endPage=247, max_workers=10, extractorType="NPAE")
-#loopPages("./inputs/CY-2024.pdf", startPage=15, endPage=247, max_workers=10, extractorType="NPAE")
+# loopPages("./inputs/CY-2024.pdf",
+#           startPage=15,
+#           endPage=594,
+#           max_workers=10,
+#           extractorData=ExtractorProps(
+#             text="",
+#             skipsBeforeNameExtraction=0,
+#             skipsBeforePositionExtraction=0,
+#             salaryOffsetIndex=0,
+#             jrAsMiddle=False
+#             )
+#           )
+
+# loopPages("./inputs/CY-2024.pdf",
+#           startPage=596,
+#           endPage=610,
+#           max_workers=10,
+#           extractorData=ExtractorProps(
+#             text="",
+#             skipsBeforeNameExtraction=2,
+#             skipsBeforePositionExtraction=0,
+#             salaryOffsetIndex=0,
+#             jrAsMiddle=True
+#             )
+#           )
+
+# loopPages("./inputs/CY-2024.pdf",
+#           startPage=611,
+#           endPage=633,
+#           max_workers=10,
+#           extractorData=ExtractorProps(
+#             text="",
+#             skipsBeforeNameExtraction=1,
+#             skipsBeforePositionExtraction=0,
+#             salaryOffsetIndex=0,
+#             jrAsMiddle=True
+#             )
+#           )
+
+loopPages("./inputs/CY-2024.pdf",
+          startPage=635,
+          endPage=635,
+          max_workers=10,
+          extractorData=ExtractorProps(
+            text="",
+            skipsBeforeNameExtraction=1,
+            skipsBeforePositionExtraction=0,
+            salaryOffsetIndex=2,
+            jrAsMiddle=True
+            )
+          )
+
+#loopPages("./inputs/CY-2024.pdf", startPage=596, endPage=596, max_workers=10, extractorType="SRO")
